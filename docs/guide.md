@@ -28,15 +28,15 @@
 - 工作完毕，准备合并至共有仓库
     - 因为我们不能保证在我们工作期间，主分支一定不会发生更新，所以为了避免冲突，我们需要先将自己的仓库更新至最新状态，为此，我们首先切换回本地仓库
     ```
-    git checkout master
+    git checkout master(1)
     ```
     - 获取远程分支的最新内容，随后会在我们本地仓库创建了名为`upstream/master`的分支，可以使用`git branch -a`命令进行查看
     ```
-    git fetch upstream master
+    git fetch upstream master(2)
     ```
     - 我们尝试合并，如果遇到冲突，自行使用`git add`解决冲突。
     ```
-    git rebase upstream/master #合并分支
+    git rebase upstream/master #合并分支(3)
     ```
     - 修正分支线，我们切换回刚才的工作分支，将当前分支时间线修正到`master`分支前，并且纳入刚刚主线的更新
     ```
@@ -49,7 +49,7 @@
 	```
 - 发起`pull request`,我们需要在Web页面打开自己`fock`的仓库，发起`pull request`，原目标为`自己仓库的new_branch`，目标为`共有分支的master分支`，
 随后将会通知项目管理员进行审查，可以进行相关讨论，做一些新的改进，随后重复上述过程，最终由项目管理员接受`pull request`，并纳入`master`分支。
-
+- 在`pull request`被接受后，我们切换回自己的主分支，随后拉取远程更新，也就是执行上述的1,2,3步骤，来保证本地仓库的同步
 ## 参考资料
 
 - 《Git pro 中文版》[http://git.oschina.net/progit/](http://git.oschina.net/progit/)
