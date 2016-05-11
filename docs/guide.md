@@ -43,8 +43,8 @@
     git checkout new_branch
     git rebase master
     ```
-- 此时我们已经准备好了，我们将更新推送到自己的仓库里
-    ```
+- 此时我们已经准备好了，我们将更新推送到自己的仓库里,如果提示失败，请使用**git push --force**
+	```
     git push -u origin new_branche  #第一次使用-u命令，将本地分支和远程分支关联起来，随后只需要使用 git push
     ```
 - 发起`pull request`,我们需要在Web页面打开自己`fock`的仓库，发起`pull request`，原目标为`自己仓库的new_branch`，目标为`共有分支的master分支`，
