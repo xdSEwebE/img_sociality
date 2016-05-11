@@ -12,7 +12,6 @@
 
 #### 开发流程：
 
-- 
 开发者`fock`公共仓库，去个人主页找到仓库，随后克隆至本地
     ```
     git clone git@github.com:__your_name__/img_sociality.git
