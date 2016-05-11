@@ -11,7 +11,6 @@
 你当前所访问的仓库为`xdSEwebE/img_sociality`，是项目组的共有仓库，我们使用基于`fock`的协作流程，每一个人都会在自己独立的分支上进行开发，开发完毕后开启`pull request`，由`项目管理员`及`相关人员`讨论结束后，方可归并至`master`分支。
 
 #### 开发流程：
-
 开发者`fock`公共仓库，去个人主页找到仓库，随后克隆至本地
     ```
     git clone git@github.com:__your_name__/img_sociality.git
