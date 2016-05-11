@@ -41,7 +41,7 @@
     - 修正分支线，我们切换回刚才的工作分支，将当前分支时间线修正到`master`分支前，并且纳入刚刚主线的更新
     ```
     git checkout new_branch
-    git base master
+    git rebase master
     ```
 - 此时我们已经准备好了，我们将更新推送到自己的仓库里
     ```
