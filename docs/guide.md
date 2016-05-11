@@ -36,7 +36,7 @@
     ```
     - 我们尝试合并，如果遇到冲突，自行使用`git add`解决冲突。
     ```
-    git merge upstream/master #合并分支
+    git rebase upstream/master #合并分支
     ```
     - 修正分支线，我们切换回刚才的工作分支，将当前分支时间线修正到`master`分支前，并且纳入刚刚主线的更新
     ```
