@@ -5,6 +5,7 @@
 - 可以去学习廖雪峰的`git`教程，[站点地址](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/)
 - `markdown`去写文档，置于`wiki`中，你可以在本地用任何你喜欢的编辑器去写😄，比如`sublime`,`visual studio code`,`atom`，它只是纯文本而已。
 - 命名所有文档请使用英文，并且追加到`docs/README.md`里
+
 ## 基于Git的代码协作流程
 
 你当前所访问的仓库为`xdSEwebE/img_sociality`，是项目组的共有仓库，我们使用基于`fock`的协作流程，每一个人都会在自己独立的分支上进行开发，开发完毕后开启`pull request`，由`项目管理员`及`相关人员`讨论结束后，方可归并至`master`分支。
@@ -59,4 +60,4 @@
 
 author:Lucky Jing
 
-Date: 2016/5/11
+Date: 2016/5/11 
