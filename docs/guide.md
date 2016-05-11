@@ -47,7 +47,7 @@
     ```
     git push -u origin new_branche  #第一次使用-u命令，将本地分支和远程分支关联起来，随后只需要使用 git push
     ```
-- 发起`pull request`,我们需要在Web页面打开共有仓库，发起`pull request`，原目标为`自己仓库的new_branch`，目标为`共有分支的master分支`，
+- 发起`pull request`,我们需要在Web页面打开自己`fock`的仓库，发起`pull request`，原目标为`自己仓库的new_branch`，目标为`共有分支的master分支`，
 随后将会通知项目管理员进行审查，可以进行相关讨论，做一些新的改进，随后重复上述过程，最终由项目管理员接受`pull request`，并纳入`master`分支。
 
 ## 参考资料
