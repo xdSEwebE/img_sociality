@@ -50,3 +50,10 @@
 随后将会通知项目管理员进行审查，可以进行相关讨论，做一些新的改进，随后重复上述过程，最终由项目管理员接受`pull request`，并纳入`master`分支。
 
 ## 参考资料
+
+- 《Git pro 中文版》[http://git.oschina.net/progit/](http://git.oschina.net/progit/)
+
+---
+
+author:Lucky Jing
+Date: 2016/5/11
