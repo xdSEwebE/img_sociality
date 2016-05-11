@@ -3,7 +3,7 @@
 - 安装`git`环境，[下载地址](https://git-scm.com/download/)
     - `windows`用户下载好以后使用`Git Bash`进行相关操作
 - 可以去学习廖雪峰的`git`教程，[站点地址](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/)
-- `markdown`去写文档，置于`wiki`中，你可以在本地用任何你喜欢的编辑器去写😄，比如`sublime`,`visual studio code`,`atom`，它只是纯文本而已。
+- `markdown`去写文档，置于`docs`中，由项目管理员负责整理到`wiki`中，你可以在本地用任何你喜欢的编辑器去写😄，比如`sublime`,`visual studio code`,`atom`，它只是纯文本而已。
 
 - 命名所有文档请使用英文，并且追加到`docs/README.md`里
 
@@ -56,6 +56,6 @@
 
 ---
 
-author:Lucky Jing
+**author:**Lucky Jing
  
-Date: 2016/5/11 
+**Date: **2016/5/11 
