@@ -1,3 +1,8 @@
+## 摘要
+- fork项目到自己github的账号
+- 提交代码或文件到fork的仓库
+- 向共有仓库发出pull request请求
+
 ## 基础准备
 
 - 安装`git`环境，[下载地址](https://git-scm.com/download/)
