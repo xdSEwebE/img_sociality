@@ -1,3 +1,17 @@
+## 摘要
+- fork项目到自己github的账号
+- 提交代码或文件到fork的仓库
+- 向共有仓库发出pull request请求
+- github添加图片链接的格式：
+```
+(https://github.com/yourname/your-repository/raw/master/images-folder/xxx.png)
+
+	yourname            --- 你的帐号
+	your-respository --- 你的 project 名
+	images-folder      --- 你存放图片的文件夹，如果是直接放在 project 的项目根目录的話，就可以省略這個
+	xxx.png                --- 你的图片名
+所以我们本次仓库的内容为https://github.com/xdSEwebE/img_sociality/raw/master/screenshots/*.*
+```
 ## 基础准备
 
 - 安装`git`环境，[下载地址](https://git-scm.com/download/)
