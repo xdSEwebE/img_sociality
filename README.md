@@ -1,4 +1,4 @@
-![](http://github.com/xdSEwebE/img_sociality/raw/master/screenshots/color_your_life.png)
+![](https://github.com/xdSEwebE/img_sociality/raw/master/screenshots/color_your_life.png)
 # 校园图片社交平台
 
 ---
