@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*通用样式*/
+
+
+/*清除浮动*/
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+
+/*head_page*/
+
+#head_page_box {
+    position: relative;
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+    background-position: center 0;
+    background-image: url('../img/head-img/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.mask {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    background: url('../img/head-img/head_top_mask.png');
+}
+
+#head_page {
+    width: 100%;
+    min-width: 1000px;
+    height: 500px;
+}
+
+.title_box {
+    width: 100%;
+    height: 210px;
+    border: 0;
+}
+
+
+
+#head_title {
+    padding-top: 140px;
+    text-align: center;
+    color: white;
+    font-family: "宋体";
+    font-size: 40px;
+}
+
+.search_unit {
+    display: inline-block;
+    position: relative;
+}
+
+.search_box {
+    text-align: center;
+}
+
+.search_input {
+    padding: 0 10px;
+    width: 536px;
+    height: 34px;
+    border: 1px solid rgba(255, 255, 255, .8);
+    border-radius: 2px;
+    color: #fff;
+    background: rgba(0, 0, 0, .15);
+}
+
+.search_input:hover {
+    background: rgba(0, 0, 0, .5);
+}
+
+.search_go {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 36px;
+    background: url('../img/head-img/icon_search.svg') 9px 7px no-repeat;
+    cursor: pointer;
+}
+
+.search_answer_view {
+    background: rgba(0, 0, 0, .4);
+    margin-top: 0;
+    position: absolute;
+    box-sizing: border-box;
+    font-size: 16px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .2);
+    z-index: 999999999999;
+}
+
+.search_answer_view li {
+    padding-left: 10px;
+    cursor:pointer;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    color: #fff;
+}
+
+.search_answer_view li:hover {
+    background: rgba(0, 0, 0, .7);
+}
+
+.hot-words {
+    margin-top: 10px;
+    color: #ddd;
+}
+
+.hot-words>a {
+    display: inline-block;
+    padding-right: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hot-words>a:hover {
+    text-decoration: underline;
+}
+
+/*顶部固定的menu*/
+#menu_bar{
+	position: fixed;
+    width: 100%;
+    padding: 0 40px;
+    height: 48px;
+    z-index:10;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.menu_bar2 {
+    background-color:#fff;
+}
+
+.menu_left {
+    float: left;
+    height: 28px;
+    margin-top: 10px;
+}
+
+#logo{
+    display: inline-block;
+    width: 80px;
+    height: 28px;
+    margin-right: 20px;
+    
+}
+.menu_bar1 .logo_dif{
+	background-image: url('../img/head-img/logo_wt.svg');
+}
+.menu_bar2 .logo_dif{
+    background-image: url('../img/head-img/logo.svg');	
+}
+.menu_bar1 .search_box{
+	display:none;
+}
+.menu_bar2 .search_box{
+	display:inline-block;
+	text-align:center;
+	margin-top:8px;
+	
+}
+.menu_bar2 .search_input{
+	height: 32px;
+    padding: 0 6px 0 12px;
+    font-size: 14px;
+    color: #bbb;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+.menu_bar2 .search_answer_view li{
+	color:black;
+}
+.menu_bar2 .search_answer_view li:hover{
+	background: #F2F2F2;
+}
+.menu_bar2 .search_go{
+	background: url('../img/head-img/menu_sprite.svg') 12px -91px no-repeat;
+}
+.menu_bar2 .search_answer_view{
+	position: absolute;
+    box-sizing: border-box;
+    font-size: 16px;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,.2);
+    z-index: 10;
+}
+.menu_right {
+    float: right;
+    height: 48px;
+    width: 114px;
+    line-height: 48px;
+}
+
+.nav_btn {
+    display: inline-block;
+    cursor: pointer;
+    width: 50px;
+    height: 34px;
+    line-height: 32px;
+    font-size: 14px;
+    border:1px solid white;
+    border-radius: 2px;
+    color: white;
+}
+
+#register_btn {
+    background: rgba(201, 0, 0, .6);
+    border: 1px solid rgba(201, 0, 0, .6);
+}
+
+#register_btn:hover {
+    background: #c90000;
+    border: 1px solid #c90000;
+}
+.menu_bar2 #register_btn{
+	background: linear-gradient( #E53E49, #D43636);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.08),0 1px 0 rgba(255,255,255,.3);
+    text-shadow: 0 -1px 0 rgba(0,0,0,.1);
+    color: #fff;
+    border: 1px solid #C90000;
+}
+.menu_bar2 #register_btn:hover{
+	background: linear-gradient( #F45D68, #E54646);
+    color: #fff;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.08),0 1px 0 rgba(255,255,255,.1);
+    border: 1px solid #C90000;
+}
+#login_btn{
+	border:1px solid rgba(255,255,255,.8);
+}
+#login_btn:hover {
+    background-color: white;
+    color: black;
+}
+.menu_bar2 #login_btn{
+	background: linear-gradient( #FAFAFA, #F2F2F2);
+    border: 1px solid #D9D9D9;
+    cursor: pointer;
+    text-decoration: none;
+    color: #444;
+}
+.menu_bar2 #login_btn:hover{
+	background: -webkit-linear-gradient(#FFF, #F7F7F7);
+	background: -o-linear-gradient(#FFF, #F7F7F7);
+	background: linear-gradient(#FFF, #F7F7F7);
+}
+/*内容部分*/
+.content_page{
+    width: 1248px;
+    position: relative;
+    margin: 0 auto;
+    border: 0;
+}
+/*分割线样式*/
+.recommend_line{
+	position:relative;
+	padding:20px 0;
+	text-align: center;
+}
+.recommend_line::before{
+	position:absolute;
+	left:0;
+	top:28px;
+	content:"";
+	width:44%;
+	border:1px solid #ededed;
+}
+.recommend_line::after{
+	position:absolute;
+	right:0;
+	top:28px;
+	content:"";
+	width:44%;
+	border:1px solid #ededed;
+}
+
+
+
+/*img_page*/
+
+#img_page {
+    position: relative;
+  
+    width:100%;
+}
+
+.box {
+    padding:10px;
+    float: left;
+}
+
+.pic {
+	width:200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 2px #ccc;
+}
+
+.pic img {
+	display:block;
+    width:200px;
+    cursor:pointer;
+}
+.pic .img_infor{
+	display: block;
+    padding: 0 16px;
+    margin: 10px 0;
+    line-height: 1.35em;
+    overflow: hidden;
+    word-wrap: break-word;
+    font-size:12px;
+    color:#444;
+}
+.pic .author_infor{
+	position:relative;
+    margin: 10px 16px;
+    height:40px;
+}
+.pic .author_head{
+	position:absolute;
+	left:0;
+	top:0;
+}
+.pic .author_head img{
+	width:40px;
+	height:40px;
+}
+.pic .author_name{
+	margin-left:50px;
+	height:40px;
+	line-height:40px;
+	font-size:14px;
+	color:#9E7E6B;;
+}
