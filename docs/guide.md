@@ -10,7 +10,7 @@
 	your-respository --- 你的 project 名
 	images-folder      --- 你存放图片的文件夹，如果是直接放在 project 的项目根目录的話，就可以省略這個
 	xxx.png                --- 你的图片名
-所以我们本次仓库的内容为http:github.com/xdSEwebE/img_sociality/raw/master/screenshots/*.*
+所以我们本次仓库的内容为http://github.com/xdSEwebE/img_sociality/raw/master/screenshots/*.*
 ```
 ## 基础准备
 
