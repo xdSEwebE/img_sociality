@@ -7,32 +7,9 @@ addHeight:当滚动条高度加页面高度大于这个值时,需要加入新的
 
 window.addEventListener('load',function() {
     var positionMessage = {};
-    var g_index = 0;
-    var g_maxNum = 97;
+    var num = 0;
+    var maxNum = 97;
     waterfall('img_page', 'box',230);
-    //额外需要加载的图片...
-
-    //为简单起见,只来几个,循环加
-    /*var data=[{'src':'images/30.jpg'},{'src':'images/31.jpg'},{'src':'images/32.jpg'},{'src':'images/33.jpg'},{'src':'images/34.jpg'}];
-    window.onscroll=function(){
-    	if(checkHeight()){
-    		var main=document.getElementById("main");
-    		//可以一次加入一堆,也可以依次加入一个,这里一次加入5张图片
-    		for(var i=0;i<data.length;i++){
-    			var box=document.createElement("div");
-    			box.className="box";
-    			main.appendChild(box);
-    			var pic=document.createElement("div");
-    			pic.className="pic";
-    			box.appendChild(pic);
-    			var img=document.createElement("img");
-    			//img.src=data[i].src;
-    			img.setAttribute("src",data[i].src);
-    			pic.appendChild(img);
-    			putInMain(box);
-    		}
-    	}
-    }*/
 
     //换一种写法...
     //已知共存了97张图片,已经加入了20张
@@ -40,32 +17,16 @@ window.addEventListener('load',function() {
     var main = document.getElementById("img_page");
     window.addEventListener('scroll', function() {
         if (checkHeight()) {
-            putNum(main,10,g_index,g_maxNum);
+            putNum(main,1);
         }
     },false);
     //加载10张图片
-    function putNum(main,onceNum,num,maxNum){
+    function putNum(main,onceNum){
         //可以一次加入一堆,也可以依次加入一个,这里随便怎么写
             let pd = document.createDocumentFragment();
             for (var i = 0; i < onceNum; i++) {
-                /*(function() {
-                    var box = document.createElement("div");
-                    box.className = "box";
-                    pd.appendChild(box);
-                    var pic = document.createElement("div");
-                    pic.className = "pic";
-                    box.appendChild(pic);
-                    var img = document.createElement("img");
-                    img.src = "images/" + num + ".jpg";
-                    num++;
-                    if (num == maxNum + 1) { num = 0; }
-                    pic.appendChild(img);
-                    img.onload=function(){
-                        putInMain(box); 
-                    }
-                })();*/
                 let box = document.createElement("div");
-                box.className = "box";
+                box.className = "box viewin";
                 pd.appendChild(box);
                 let pic = document.createElement("div");
                 pic.className = "pic";
@@ -126,13 +87,19 @@ window.addEventListener('load',function() {
         //offsetTop 的bug
         positionMessage.top = main.offsetTop;
         //解决bug   学到了:getComputedStyle(node) 与 currentStyle
+        
         if(window.getComputedStyle){
-            for(let node=main;getComputedStyle(node.parentNode).position!="static";node=node.parentNode){
-                positionMessage.top +=node.parentNode.offsetTop;
+            for(let node=main;node.parentNode!=document.body;node=node.parentNode){
+                //console.log(node.parentNode.nodeName);
+                if(getComputedStyle(node.parentNode).position!="static"){
+                    positionMessage.top +=node.parentNode.offsetTop;
+                }
             }    
         }else{
-            for(let node=main;node.parentNode.currentStyle.position==="static";node=node.parentNode){
-                positionMessage.top +=node.parentNode.offsetTop;
+            for(let node=main;node.parentNode!=document.body;node=node.parentNode){
+                if(node.parentNode.currentStyle.position==="static"){
+                    positionMessage.top +=node.parentNode.offsetTop;
+                }
             } 
         }
 
@@ -145,9 +112,8 @@ window.addEventListener('load',function() {
         main.style.width = wid * num + 'px';
         main.style.margin = "0 auto";
         //main.style.cssText="width:"+wid*num+"px;margin:0 auto;";
-        console.log(g_index);
-        console.log(g_maxNum);
-        putNum(main,20,g_index,g_maxNum);
+
+        putNum(main,20);
     }
     //将生成的box放在该有的位置(通过positionMessage获得) 并更新positionMessage
     function putInMain(element,parent) {
@@ -164,7 +130,7 @@ window.addEventListener('load',function() {
         //console.log(i+'所加位置的高度:'+positionMessage.addHeight);
         positionMessage.hei[index] += element.offsetHeight;
 
-        parent.style.height = Math.max.apply(null,positionMessage.hei)+'px'
+        parent.style.height = (Math.max.apply(null,positionMessage.hei)+250)+'px'
         //console.log("添加的元素高度:"+element.offsetHeight);
         //console.log(i+'加完之后当列的高度:'+positionMessage.hei[index]	);
         //console.log(positionMessage.hei);
@@ -180,6 +146,6 @@ window.addEventListener('load',function() {
         //滚动条的高度
         var scrollHei = document.body.scrollTop || document.documentElement.scrollTop;
         var clientHei = document.documentElement.clientHeight || document.body.clientHeight;
-        return (positionMessage.addHeight+positionMessage.top < scrollHei + clientHei) ? true : false;
+        return (positionMessage.addHeight+positionMessage.top+250 < scrollHei + clientHei) ? true : false;
     }
 },false);
