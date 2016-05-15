@@ -89,7 +89,6 @@ a {
     border-radius: 2px;
     color: #fff;
     background: rgba(0, 0, 0, .15);
-	outline:none;
 }
 
 .search_input:hover {
@@ -156,10 +155,12 @@ a {
     text-align: center;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    transition:all 0.5s linear;
 }
 
 .menu_bar2 {
     background-color:#fff;
+    box-shadow:0 0 5px #444;
 }
 
 .menu_left {
@@ -233,6 +234,7 @@ a {
     border:1px solid white;
     border-radius: 2px;
     color: white;
+    box-sizing:border-box;
 }
 
 #register_btn {
@@ -320,17 +322,20 @@ a {
     padding:10px;
     float: left;
 }
+/*js给box 加 viewin 类  起到显示动画效果*/
+.viewin{
+	animation:viewIn .8s ease-in;
+}
 
 .pic {
-	width:200px;
-    padding: 10px;
+	width:210px;
     border: 1px solid #ccc;
     box-shadow: 0 0 2px #ccc;
 }
 
 .pic img {
 	display:block;
-    width:200px;
+    width:210px;
     cursor:pointer;
 }
 .pic .img_infor{
@@ -345,13 +350,13 @@ a {
 }
 .pic .author_infor{
 	position:relative;
-    margin: 10px 16px;
+    padding: 10px 16px;
     height:40px;
+    border-top: 1px solid #F2F2F2;
+    background: #FAFAFA;
 }
 .pic .author_head{
-	position:absolute;
-	left:0;
-	top:0;
+	float:left;
 }
 .pic .author_head img{
 	width:40px;
