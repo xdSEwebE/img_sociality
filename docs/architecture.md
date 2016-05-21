@@ -70,7 +70,7 @@
 
 - 请使用`Maven`作为后端的包依赖管理器
 - 需要将打包好的`war`包至于`tomcat`的`webapp`目录下来部署程序
-
+- 上传文件请请使用七牛云提供的服务，网站地址：[http://www.qiniu.com/](http://www.qiniu.com/)
 ---
 
 **author:**LuckyJing
