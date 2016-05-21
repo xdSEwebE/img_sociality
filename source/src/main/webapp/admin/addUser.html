@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>添加用户</title>
+    <link href="http://cdn.bootcss.com/kube/3.0.2/css/kube.min.css" rel="stylesheet">
+
+</head>
+<body>
+<form action="" id="add">
+    <label for="name">
+        姓名
+    </label>
+    <input type="text" id="name" name="name">
+    <label for="password">密码
+    </label>
+    <input type="text" id="password" name="password">
+    <button id="sub">提交</button>
+</form>
+<script src="http://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+<script>
+    $("#sub").on('click', function (e) {
+        e.preventDefault();
+        var data = $("#add").serialize();
+        $.post('/admin/users/add', data, function (res) {
+            console.log(res);
+        });
+    });
+</script>
+</body>
+</html>
