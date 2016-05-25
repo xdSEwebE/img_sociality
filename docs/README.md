@@ -9,3 +9,4 @@
     - `letter_proposal_1` 给团队的建议
     - `letter_proposal_2` 给公司的建议信
 - `architecture` 项目架构报告
+- `SRS` 项目需求说明书
