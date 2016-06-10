@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/pagecss.css">
     <script defer src="js/waterFall.js"></script>
     <script defer src="js/searchInput.js"></script>
+    <script defer src="js/someEffect.js"></script>
 </head>
 
 <body>
@@ -37,8 +38,8 @@
                 </div>
                 <div class="menu_right">
                     <div class="nav_login">
-                        <a id="register_btn" class="nav_btn" href=""><span>注册</span></a>
-                        <a id="login_btn" class="nav_btn" href=""><span>登录</span></a>
+                        <a id="register_btn" class="nav_btn"><span>注册</span></a>
+                        <a id="login_btn" class="nav_btn"><span>登录</span></a>
                     </div>
                 </div>
             </div>
@@ -93,7 +94,46 @@
                     </div>
                 </div>
                 -->
-
+            </div>
+        </div>
+    </div>
+    <div id="returnTop" title="回到顶部"></div>
+    <div id="ls_box" class="login_box" style="display:none">
+        <div id="login_frame" class="horizontalCenter">
+            <img src="img/head-img/logo.svg" alt="" class="">
+            <div class="login_wrap">
+                <div id="login_page" style="display: none;">
+                    <p class="with_line">请输入帐号密码</p>
+                    <form action="#" method="POST" class="login_form">
+                        <input type="text" class="ls_input" name="account" placeholder="请输入帐号" />
+                        <input type="password" class="ls_input" name="password" placeholder="请输入密码" />
+                        <input type="submit" class="sub_input" name="submit" value="登录" />
+                    </form>
+                    <div class="switch_back">
+                        <a id="forgetPassword" class="left">忘记密码»</a>
+                        <p class="right">
+                            还没有注册帐号?
+                            <a id="toSignup">点击注册»</a>
+                        </p>
+                    </div>
+                </div>
+                <div id="signup_page" style="display: none;">
+                    <p class="with_line">请输入帐号密码</p>
+                    <form action="#" method="POST" class="signup_form">
+                        <input type="text" class="ls_input" name="account" placeholder="请输入帐号" />
+                        <input type="password" class="ls_input" name="password" placeholder="请输入密码" />
+                        <input type="submit" class="sub_input" name="submit" value="注册" />
+                    </form>
+                    <div class="switch_back">
+                        <p class="right">
+                            已有注册帐号?
+                            <a id="toLogin">点击登录»</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="login_close">
+                <i></i>
             </div>
         </div>
     </div>
