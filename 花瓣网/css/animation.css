@@ -1,88 +1,125 @@
-@-webkit-keyframes 'viewIn' {
-        0%{
-            transform:scale(0.7);
-            filter:alpha(opacity:0);
-            opacity:0;
-        }
-        50%{
-            transform:scale(1.05);
-            filter:alpha(opacity:50);
-            opacity:0.5;
-        }
-        100%{
-            transform:none;
-            filter:alpha(opacity:100);
-            opacity:1;
-        }
+@-webkit-keyframes viewIn {
+    0% {
+        transform: scale(0.7);
+        filter: alpha(opacity: 0);
+        opacity: 0;
     }
-@-moz-keyframes 'viewIn' {
-        0%{
-            transform:scale(0.7);
-            filter:alpha(opacity:0);
-            opacity:0;
-        }
-        50%{
-            transform:scale(1.05);
-            filter:alpha(opacity:50);
-            opacity:0.5;
-        }
-        100%{
-            transform:none;
-            filter:alpha(opacity:100);
-            opacity:1;
-        }
+    50% {
+        transform: scale(1.05);
+        filter: alpha(opacity: 50);
+        opacity: 0.5;
     }
+    100% {
+        transform: none;
+        filter: alpha(opacity: 100);
+        opacity: 1;
+    }
+}
 
-@-ms-keyframes 'viewIn' {
-        0%{
-            transform:scale(0.7);
-            filter:alpha(opacity:0);
-            opacity:0;
-        }
-        50%{
-            transform:scale(1.05);
-            filter:alpha(opacity:50);
-            opacity:0.5;
-        }
-        100%{
-            transform:none;
-            filter:alpha(opacity:100);
-            opacity:1;
-        }
+@-moz-keyframes viewIn {
+    0% {
+        transform: scale(0.7);
+        filter: alpha(opacity: 0);
+        opacity: 0;
     }
+    50% {
+        transform: scale(1.05);
+        filter: alpha(opacity: 50);
+        opacity: 0.5;
+    }
+    100% {
+        transform: none;
+        filter: alpha(opacity: 100);
+        opacity: 1;
+    }
+}
 
-@-o-keyframes 'viewIn' {
-        0%{
-            transform:scale(0.7);
-            filter:alpha(opacity:0);
-            opacity:0;
-        }
-        50%{
-            transform:scale(1.05);
-            filter:alpha(opacity:50);
-            opacity:0.5;
-        }
-        100%{
-            transform:none;
-            filter:alpha(opacity:100);
-            opacity:1;
-        }
+@-ms-keyframes viewIn {
+    0% {
+        transform: scale(0.7);
+        filter: alpha(opacity: 0);
+        opacity: 0;
     }
+    50% {
+        transform: scale(1.05);
+        filter: alpha(opacity: 50);
+        opacity: 0.5;
+    }
+    100% {
+        transform: none;
+        filter: alpha(opacity: 100);
+        opacity: 1;
+    }
+}
 
-@keyframes 'viewIn' {
-        0%{
-            transform:scale(0.7);
-            filter:alpha(opacity:0);
-            opacity:0;
-        }
-        50%{
-            transform:scale(1.05);
-            filter:alpha(opacity:50);
-            opacity:0.5;
-        }
-        100%{
-            transform:none;
-            filter:alpha(opacity:100);
-            opacity:1;
-        }
+@-o-keyframes viewIn {
+    0% {
+        transform: scale(0.7);
+        filter: alpha(opacity: 0);
+        opacity: 0;
     }
+    50% {
+        transform: scale(1.05);
+        filter: alpha(opacity: 50);
+        opacity: 0.5;
+    }
+    100% {
+        transform: none;
+        filter: alpha(opacity: 100);
+        opacity: 1;
+    }
+}
+
+@keyframes viewIn {
+    0% {
+        transform: scale(0.7);
+        filter: alpha(opacity: 0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+        filter: alpha(opacity: 50);
+        opacity: 0.5;
+    }
+    100% {
+        transform: none;
+        filter: alpha(opacity: 100);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes flip {
+    0% {
+        -webkit-transform: perspective(2000px) rotateY(0deg);
+    }
+    100% {
+        -webkit-transform: perspective(2000px) rotateY(90deg);
+    }
+}
+
+@-webkit-keyframes flip_out {
+    0% {
+        -webkit-transform: perspective(2000px) rotateY(-90deg);
+    }
+    100% {
+        -webkit-transform: perspective(2000px) rotateY(0deg);
+    }
+}
+
+@keyframes flip {
+    0% {
+        transform: perspective(2000px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(2000px) rotateY(90deg);
+    }
+}
+
+@keyframes flip_out {
+    0% {
+        transform: perspective(2000px) rotateY(-90deg);
+    }
+    100% {
+        transform: perspective(2000px) rotateY(0deg);
+    }
+}
