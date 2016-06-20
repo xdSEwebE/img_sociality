@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="defaultPersistenceUnit">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <properties>
+            <!--数据库的地址-->
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/blog"/>
+            <!--连接数据库的驱动-->
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <!--数据库用户名-->
+            <property name="hibernate.connection.username" value="root"/>
+            <!--数据库密码-->
+            <property name="hibernate.connection.password" value="sutangbama"/>
+            <property name="hibernate.archive.autodetection" value="class"/>
+            <!--显示sql语句-->
+            <property name="hibernate.show_sql" value="true"/>
+            <!--编码配置-->
+            <property name="hibernate.connection.useUnicode" value="true"/>
+            <property name="hibernate.connection.characterEncoding" value="UTF-8"/>
+            <property name="hibernate.use_sql_comments" value="false"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <!-- 自动输出schema创建DDL语句 -->
+            <property name="hbm2ddl.auto" value="update"/>
+            <!-- 数据库连接超时后自动重连 -->
+            <property name="hibernate.connection.autoReconnect" value="true"/>
+            <property name="connection.autoReconnectForPools" value="true"/>
+            <property name="connection.is-connection-validation-required" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>

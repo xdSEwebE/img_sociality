@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>用户管理</title>
+    <link href="http://cdn.bootcss.com/kube/3.0.2/css/kube.min.css" rel="stylesheet">
+</head>
+<body>
+
+<h3>
+    所有用户
+    <a href="/admin/users/add" type="button" class="btn btn-primary btn-sm">添加</a>
+</h3>
+<table>
+    <thead>
+    <th>用户名</th>
+    <th>密码</th>
+    </thead>
+    <tbody id="tbody">
+
+    </tbody>
+</table>
+<script src="http://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+<script>
+    var tbody = document.querySelector("#tbody");
+    function makeRow(name, pwd) {
+        var tr = document.createElement("tr");
+        tr.innerHTML = `<td>${name}</td><td>${pwd}</td>`;
+        return tr;
+    }
+    $.get('/api/users', function (res) {
+        res.forEach(function (item) {
+            tbody.appendChild(makeRow(item.name,item.pwd))
+        })
+    });
+</script>
+</body>
+</html>
