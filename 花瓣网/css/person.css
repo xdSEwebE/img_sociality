@@ -1,0 +1,543 @@
+/* user_page样式 */
+
+
+body{
+    
+    background-color: #EAEAEA;
+}
+.wrapper {
+    position: relative;
+    margin: 0 auto;
+    border: 0;
+}
+#user_card {
+    background: #fff;
+    margin-top: 110px;
+    position: relative;
+    box-shadow: 0 0 4px rgba(0,0,0,.2);
+}
+#user_card .maozi {
+    width: 150px;
+    height: 100px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 4px rgba(0,0,0,.2);
+    position: absolute;
+    left: 15px;
+    top: -40px;
+}
+#user_card .inner.without-side {
+    margin-right: 0;
+    border-right: 0;
+}
+#user_card .inner {
+    height: 170px;
+    background: #fff;
+    position: relative;
+    padding-left: 180px;
+    margin-right: 236px;
+    border-right: 1px solid #EDEDED;
+}
+
+#user_card .avatar-unit {
+    background: #fff;
+    border-radius: 4px;
+    position: absolute;
+    left: 20px;
+    top: -35px;
+    width: 140px;
+}
+#user_card .avatar-unit .img {
+    position: relative;
+    height: 140px;
+    width: 140px;
+
+}
+#user_card .avatar-unit .img>img {
+    position: relative;
+    height: 140px;
+    width: 140px;
+
+}
+
+#user_card .avatar-unit .counts {
+    background: #fcfcfc;
+    text-align: center;
+}
+#user_card .avatar-unit .img .current-avatar {
+    max-height: 140px;
+    max-width: 140px;
+}
+img {
+    border: 0;
+}
+#user_card .avatar-unit .counts .followers {
+    display: block;
+    float: left;
+    width: 70px;
+    height: 40px;
+    padding-top: 10px;
+    border-right: 1px solid #EDEDED;
+    text-decoration: none;
+}
+#user_card .avatar-unit .counts .follows {
+    display: block;
+    height: 40px;
+    padding-top: 10px;
+    text-decoration: none;
+}
+#user_card .tabs {
+    background: #FAFAFA;
+    border-top: 1px solid #EDEDED;
+    position: relative;
+}
+#user_card .tabs .tab {
+    font-size: 14px;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 20px;
+    color: #777;
+    border-right: 1px solid #EDEDED;
+    display: inline-block;
+    text-decoration: none;
+}
+#user_page .sort-lists {
+    display: block;
+    margin-left: -16px!important;
+    zoom: 1;
+}
+#waterfall {
+    position: relative;
+    min-height: 500px;
+    margin: 16px auto 0;
+}
+.clearfix {
+}
+
+#waterfall .add-board {
+    position: relative;
+    float: left;
+    margin: 0 0 15px 16px;
+    left: auto;
+    top: auto;
+    width: 236px;
+    height: 350px;
+    background: #f6f5f5;
+    background: rgba(255,255,255,.5);
+    box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    cursor: pointer;
+}
+#waterfall .add-board .inner {
+    margin: 10px;
+    height: 326px;
+    border: 2px dashed #dedede;
+}
+#waterfall .add-board .inner i {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: url("../img/head-img/icon_add_rbig.png") 0 0 no-repeat;
+    margin: 128px auto 10px;
+}
+user agent stylesheeti, cite, em, var, address, dfn {
+    font-style: italic;
+}
+#waterfall .add-board .inner span {
+    display: block;
+    color: #777;
+    text-align: center;
+}
+#waterfall .add-board:hover {
+    background: #fff;
+}
+#waterfall .add-board:hover .inner {
+    border-color: #d4d4d4;
+}
+
+#user_page .sort-lists .Board {
+    position: relative;
+    float: left;
+    margin: 0 0 15px 16px;
+    left: 0;
+    top: 0;
+}
+.Board {
+    position: static;
+    width: 236px;
+    padding: 0;
+}
+.wfc {
+    position: absolute;
+    left: -200px;
+    top: 1000px;
+    -webkit-transition: opacity .4s ease-in-out;
+    -moz-transition: opacity .4s ease-in-out;
+    -o-transition: opacity .4s ease-in-out;
+}
+.Board {
+    position: absolute;
+    width: 236px;
+    padding: 0 0  0;
+    font-size: 12px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+
+Inherited from div#waterfall.sort-lists.clearfix.sortable
+#user_page .sort-lists {
+    display: block;
+    margin-left: -16px!important;
+    zoom: 1;
+}
+.Board .link {
+    display: block;
+    height: 299px;
+    padding: 10px 0 0 10px;
+    overflow: hidden;
+    position: relative;
+}
+a {
+    color: #222;
+    text-decoration: none;
+    outline: 0;
+}
+user agent stylesheeta:-webkit-any-link {
+    color: -webkit-link;
+    text-decoration: underline;
+    cursor: auto;
+}
+.Board .link .shadows {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 226px;
+}
+.Board .link:hover .over {
+    background-color: rgba(0,0,0,.1);
+}
+.Board .link .shadows .large-shadow {
+    width: 216px;
+    height: 216px;
+    margin: 0 3px 3px 0;
+    float: left;
+    box-shadow: inset 0 0 2px rgba(0,0,0,.2);
+}
+.Board .link .shadows .shadow {
+    width: 70px;
+    height: 70px;
+    margin: 0 3px 3px 0;
+    float: left;
+    box-shadow: inset 0 0 2px rgba(0,0,0,.2);
+}
+.Board .link .empty-board {
+    background: 0;
+}
+.Board .link .over {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 216px;
+    height: 289px;
+}
+.Board .over h3 {
+    padding: 8px 0 0 8px;
+    font-size: 14px;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+.Board .link .empty-board h3 {
+    color: #999;
+    text-shadow: none;
+}
+.Board .FollowBoard {
+    padding: 0 10px 11px;
+    text-align: center;
+}
+.Board .FollowBoard .btn {
+    display: block;
+}
+.btn {
+    display: inline-block;
+    line-height: 1;
+    border-radius: 2px;
+    font-size: 14px;
+    padding: 0 12px;
+    height: 28px;
+    line-height: 28px;
+    background: #fff;
+    background: linear-gradient( #FAFAFA, #F2F2F2);
+    border: 1px solid #D9D9D9;
+    cursor: pointer;
+    text-decoration: none;
+    color: #444;
+    white-space: nowrap;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dialog-boxes {
+    position: relative;
+    z-index: 99999;
+}
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.3);
+}
+
+.dialog-box {
+    background: #fff;
+    width: 580px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -220px 0 0 -290px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    border-radius: 1px;
+}
+.dialog-box .box-title {
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    border-bottom: 1px solid #EDEDED;
+    position: relative;
+    padding-left: 30px;
+}
+.dialog-box .box-inner {
+    position: relative;
+    padding: 20px 30px;
+}
+.StaticForm {
+    margin: 36px 0;
+
+    font-size: 13px;
+}
+.nm {
+    margin: 0 25px 15px 25px;
+}
+
+#CreateBoard .StaticForm li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.StaticForm li {
+    clear: both;
+    margin: 0;
+    padding: 15px 0;
+    color: #8c7e7e;
+    text-shadow: 0 1px rgba(255,255,255,.9);
+    border-top: 1px solid rgba(255,255,255,.7);
+    width: 100%;
+}
+.Form li {
+    display: block;
+    margin-bottom: 18px;
+    font-size: 21px;
+    font-weight: 300;
+}
+.nbt {
+    border-top-width: 0 !important;
+}
+li {
+    list-style: block;
+}
+#CreateBoard .clear-input {
+    display: block;
+    width: 100%;
+}
+.StaticForm input[type="text"], .StaticForm input[type="password"], .StaticForm textarea {
+    min-width: 375px;
+}
+.Form input[type="text"], .Form input[type="password"], .Form textarea {
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.clear-input {
+    display: inline-block;
+    padding: 0 10px;
+    height: 36px;
+    font-size: 16px;
+    line-height: 1;
+    color: #777;
+    background: #FCFCFC;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    width: 250px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+    -webkit-transition: color .2s linear,border-color .3s linear;
+}
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    resize: none;
+    outline: 0;
+}
+#CreateBoard .CategoryPicker {
+    width: 482px;
+}
+.CityPicker, .BoardPicker {
+    position: relative;
+    display: block;
+    margin-bottom: 18px;
+    padding: 7px 24px 7px 12px;
+    background-color: #f0eded;
+    background: -moz-linear-gradient( #FAFAFA, #F2F2F2);
+    background: -o-linear-gradient( #FAFAFA, #F2F2F2);
+    background: -webkit-linear-gradient( #FAFAFA, #F2F2F2);
+    background: linear-gradient( #FAFAFA, #F2F2F2);
+    cursor: pointer;
+    border: 1px solid #CCC;
+    font-size: 16px;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+.CategoryPicker {
+    margin-bottom: 0;
+    width: 337px;
+}
+
+
+
+
+
+
+
+
+
+}
+.dialog-box .box-bottom {
+    height: 68px;
+    background: #fafafa;
+    border-top: 1px solid #F2F2F2;
+    position: relative;
+}
+.dialog-box .box-bottom .buttons .btn {
+    margin-left: 10px;
+}
+.btn18 {
+    font-size: 18px;
+    padding: 0 15px;
+    border-radius: 3px;
+    height: 36px;
+    line-height: 36px;
+}
+.btn {
+    display: inline-block;
+    line-height: 1;
+    border-radius: 2px;
+    font-size: 14px;
+    padding: 0 12px;
+    height: 28px;
+    line-height: 28px;
+    background: #fff;
+    background: linear-gradient( #FAFAFA, #F2F2F2);
+    border: 1px solid #D9D9D9;
+    cursor: pointer;
+    text-decoration: none;
+    color: #444;
+    white-space: nowrap;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    text-align: center;
+}
+a {
+    color: #222;
+    text-decoration: none;
+    outline: 0;
+}
+
+
+
+
+
+
+.dialog-box .close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.dialog-box .close-btn i {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    background: url(/img/msg_close.png) 0 0 no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#CreateBoard .CategoryPicker .BoardList {
+    width: 100%;
+}
+.CategoryPicker .BoardList {
+    width: 374px;
+    height: 300px;
+    padding-bottom: 0;
+}
+.CityList, .BoardList {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: -1px;
+    left: -1px;
+    overflow-x: hidden;
+    padding-bottom: 55px;
+    width: 350px;
+    background-color: #fff;
+    border: 1px solid #BFBFBF;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.1);
+    border-radius: 3px;
+}
+.CityListBody, .BoardListBody {
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
