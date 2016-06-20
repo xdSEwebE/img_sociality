@@ -1,0 +1,144 @@
+/* 导航栏样式 */
+#menu_bar {
+    position: fixed;
+    top:0;
+    width: 100%;
+    padding: 0 40px;
+    height: 48px;
+    z-index: 10;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    transition: all 0.5s linear;
+}
+
+.menu_bar2 {
+    background-color: #fff;
+    box-shadow: 0 0 5px #444;
+}
+
+.menu_left {
+    float: left;
+    height: 28px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+#logo {
+    display: inline-block;
+    width: 80px;
+    height: 28px;
+    
+}
+
+.menu_bar2 .logo_dif {
+    background-image: url('../img/head-img/logo.svg');
+}
+
+.menu_right {
+    float: right;
+    height: 48px;
+    width: 114px;
+    line-height: 48px;
+}
+.menu_right .nav_message{
+    float:left;
+    border-left: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
+    height: 48px;
+    width: 46px;
+    cursor: pointer;
+}
+.menu_right .nav_message .message_link,.menu_right .nav_user .user_link{
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    position: relative;
+    text-align: center;
+}
+.menu_right .nav_message .message_link .message_icon{
+    width: 46px;
+    height: 48px;
+    background: url("../img/head-img/menu_sprite.svg") 0 0 no-repeat;
+    background-position:15px -185px;
+}
+.menu_right .nav_user{
+    float:left;
+    position: relative;
+    border-right: 1px solid #f5f5f5;
+    width: 46px;
+    cursor: pointer;
+}
+.menu_right .nav_user .user_headp{
+    position:absolute;
+    width: 26px;
+    height: 26px;
+    top:11px;
+    left:10px;
+    background-color:red;
+}
+.menu_right .nav_user .user_list{
+    display:none;
+    top: 48px;
+    right: -1px;
+    background-color: #fff;
+    position: absolute;
+    background: #fff;
+    width: 180px;
+    text-align: left;
+    box-shadow: 0 1px 4px rgba(0,0,0,.2);
+    overflow: hidden;
+    font-size: 14px;
+    color: #221919;
+    line-height: 1;
+}
+.nav_user .group{
+    display: block;
+    position: relative;
+    border-bottom: 1px solid #E1DFDF;
+}
+.nav_user .group:last-child{
+    border-bottom:0;
+}
+.group:first-child .user_li:first-child{
+    margin-top:10px;
+}
+.group:last-child .user_li:last-child{
+    margin-bottom:10px;
+}
+.group .user_li{
+    display: block;
+    padding-left: 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: left;
+    font-weight: 400;
+    position: relative;
+    color: #222;
+    text-decoration:none;
+}
+.group .user_li:hover{
+    background-color: #F2F2F2;
+}
+.group .user_li .li_icon{
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 13px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/head-img/icon_user_menu.svg");
+    background-repeat:no-repeat;
+}
+.group .mine_icon{
+    background-position:0 0;
+}
+.group .focus_icon{
+    background-position:0 -360px;
+}
+.group .setting_icon{
+    background-position:0 -160px;
+}
+.group .quit_icon{
+    background-position:0 -200px;
+}

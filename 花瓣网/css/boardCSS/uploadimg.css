@@ -1,0 +1,200 @@
+    body {
+        font-family: "helvetica neue", arial, sans-serif;
+        font-size: 14px;
+        color: #444;
+    }
+    
+    .dialog_boxes {
+        display:none;
+        position: fixed;
+        z-index:999;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        width:100%;
+        height:100%;
+    }
+    .dialog_boxes_shadow{
+        width:100%;
+        height:100%;
+        background-color:rgba(0, 0, 0,.3);
+    }
+    
+    #image_upload {}
+    
+    .dialog_box {
+        position: absolute;
+        left:50%;
+        top:50%;
+        margin:-180px 0 0 -290px;
+        height: 330px;
+        width: 580px;
+        background: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+        border-radius: 1px;
+    }
+    
+    .box_title {
+        height: 49px;
+        line-height: 49px;
+        font-size: 18px;
+        border-bottom: 1px solid #EDEDED;
+        position: relative;
+        padding-left: 30px;
+    }
+    
+    .box_close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    /* .box_close>i{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -10px 0 0 -10px;
+        background: url(/img/msg_close.png) 0 0 no-repeat;
+    } */
+    
+    .box_inner {
+        position: relative;
+        padding: 20px 30px;
+    }
+    
+    .upload_area {
+        border: 2px dashed #EDEDED;
+        height: 206px;
+        text-align: center;
+        position: relative;
+        margin-top: 10px;
+    }
+    .click_to_upload{
+        position:absolute;
+        top:30px;
+        left:50%;
+        margin-left:-50px;
+        width:80px;
+        height:35px;
+        line-height:35px;
+        font-size:16px;
+        color:;
+        border: 1px solid #CCC;
+        border-radius:4px;
+        background: #fafafa;
+    }
+    .prompt_p{
+        position:absolute;
+        top:100px;
+        left:0;
+        right:0;
+        font-size:16px;
+    }
+    .dragenter_shadow{
+        display:none;
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-color:rgb(242, 242, 242);
+    }
+    .dragenter_shadow>p{
+        margin-top:80px;
+        font-size:18px;
+    }
+    #uploadimg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    #create_pin{
+        display:none;
+    }
+    .inner_top {
+        padding: 20px 30px;
+        height: 170px;
+    }
+    
+    .top_left {
+        width: 170px;
+        height: 170px;
+        line-height: 170px;
+        background: #F5F5F5;
+        overflow: hidden;
+        position: relative;
+        float: left;
+    }
+    
+    .top_left>img {
+        width: 170px;
+        vertical-align: middle;
+    }
+    
+    .top_right {
+        margin-left: 190px;
+        width: 330px;
+    }
+    
+    .top_right_title {
+        height: 38px;
+        line-height: 38px;
+        font-size: 20px;
+    }
+    
+    .img_description {
+        display: block;
+        font-size:16px;
+        height: 110px;
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 4px;
+        box-sizing: border-box;
+        background: #fff;
+        border: 1px solid #CCC;
+        outline: none;
+        resize: none;
+    }
+    
+    .inner_bottom {
+        height: 68px;
+        background: #fafafa;
+        border-top: 1px solid #F2F2F2;
+        position: relative;
+    }
+    
+    .inner_bottom_btns {
+        position: absolute;
+        right: 30px;
+        top: 15px;
+    }
+    
+    .upload_btn {
+        display:inline-block;
+        font-size: 18px;
+        padding: 0 15px;
+        border-radius: 3px;
+        height: 36px;
+        line-height: 36px;
+        cursor:pointer;
+    }
+    
+    .cancelbtn {
+        background: linear-gradient( #FAFAFA, #F2F2F2);
+        border: 1px solid #D9D9D9;
+        margin-right:10px;
+    }
+    
+    .submitbtn {
+        background: linear-gradient( #E53E49, #D43636);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, .08), 0 1px 0 rgba(255, 255, 255, .3);
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, .1);
+        color: #fff;
+        border: 1px solid #C90000;
+    }

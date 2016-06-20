@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>board</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="css/boardCSS/board.css">
+    <link rel="stylesheet" href="css/boardCSS/uploadimg.css">
+    <script defer src="js/jquery.min.js"></script>
+    <script defer src="js/personjs/navBar.js"></script>
+    <script defer src="js/waterFall2.js"></script>
+    <script defer src="js/personjs/uploadimg.js"></script>
+</head>
+
+<body>
+    <div id="menu_bar" class="menu_bar2">
+        <div class="menu_left">
+            <a id="logo" class="logo_dif" href=""></a>
+        </div>
+        <!-- <div class="search_box">
+            <form method="get" action="#" class="search_unit">
+                <input id="manu_search_input" class="search_input" type="text" size="27" name="search_input" autocomplete="off" placeholder="搜索你喜欢的" value="">
+                搜索按钮
+                <a href="#" class="search_go"></a>
+                <div class="search_answer_view" style="min-width: 558px;">
+                    <ul>
+                                <li>li1111111111111111111111</li>
+                                <li>li2222222222222222222222</li>
+                                <li>li333333333333333333333</li>
+                                <li>li4444444444444444444444444</li>
+                                <li>li555555555555555555555555555</li>
+                            </ul>
+                </div>
+            </form>
+        </div> -->
+        <div class="menu_right">
+            <div class="nav_message">
+                <a class="message_link">
+                    <div class="message_icon">
+                    </div>
+                </a>
+            </div>
+            <div class="nav_user">
+                <a href="#" class="user_link">
+                    <div class="user_headp">
+                    </div>
+                </a>
+                <div class="user_list">
+                    <div class="group">
+                        <a href="#" class="user_li">我的花瓣<i class="li_icon mine_icon"></i></a>
+                    </div>
+                    <div class="group">
+                        <a href="#" class="user_li">我的关注<i class="li_icon focus_icon"></i></a>
+                    </div>
+                    <div class="group">
+                        <a href="#" class="user_li">帐号设置<i class="li_icon setting_icon"></i></a>
+                        <a href="#" class="user_li">退出登录<i class="li_icon quit_icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main_img_box">
+        <div id="img_page">
+            <div class="add_img">
+                <div class="inner">
+                    <i></i>
+                    <p>添加采集</p>
+                </div>
+            </div>
+            <!--上传图片的模块-->
+            <div class="dialog_boxes">
+                <div class="dialog_boxes_shadow"></div>
+                <div id="image_upload" class="dialog_box">
+                    <div class="box_title">上传采集
+                        <div class="box_close"><i></i></div>
+                    </div>
+                    <div class="box_inner">
+                        <div class="upload_area">
+                            <p class="click_to_upload">上传采集</p>
+                            <p class="prompt_p">也可以拖曳到该区域,完成上传</p>
+                            <div class="dragenter_shadow">
+                                <p>释放鼠标完成上传</p>
+                            </div>
+                            <input id="uploadimg" type="file" accept="image/*">
+                        </div>
+                    </div>
+                </div>
+                <div id="create_pin" class="dialog_box">
+                    <div class="box_title">上传采集
+                        <div class="box_close"><i></i></div>
+                    </div>
+                    <div class="inner_top">
+                        <div class="top_left">
+                            <img id="uploadfile">
+                        </div>
+                        <div class="top_right">
+                            <p class="top_right_title">为图片写一些描述吧</p>
+                            <textarea class="img_description"></textarea>
+                        </div>
+                    </div>
+                    <div class="inner_bottom">
+                        <div class="inner_bottom_btns">
+                            <a id="cancel_img" class="upload_btn cancelbtn">取消</a>
+                            <a id="submit_img" class="upload_btn submitbtn">采下来</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="img_box">
+				<div class="img_area">
+					<a>
+						<img src="images/0.jpg">
+						<div class="shadow"></div>
+					</a>
+					<p class="img_infor">jiesao</p>	
+				</div>
+			</div> -->
+        </div>
+    </div>
+</body>
+
+</html>

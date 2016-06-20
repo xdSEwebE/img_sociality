@@ -7,12 +7,10 @@ addHeight:当滚动条高度加页面高度大于这个值时,需要加入新的
 
 window.addEventListener('load', function() {
     var positionMessage = {};
-    var num = 0;
-    var maxNum = 97;
-    waterfall('img_page', 'box', 230);
+        
 
-    //换一种写法...
-    //已知共存了97张图片,已经加入了20张
+
+    waterfall('img_page', 'img_box', 240);
 
     var main = document.getElementById("img_page");
     window.addEventListener('scroll', function() {
@@ -20,7 +18,9 @@ window.addEventListener('load', function() {
             putNum(main, 1);
         }
     }, false);
-    //加载10张图片
+
+
+    //加载图片
     function putNum(main, onceNum) {
         //可以一次加入一堆,也可以依次加入一个,这里随便怎么写
         var pd = document.createDocumentFragment();
@@ -33,64 +33,29 @@ window.addEventListener('load', function() {
                     success:function(data){   },
                     error:function(e,data){console.log(data)}
                 })*/
-                var box = document.createElement("div");
-                box.className = "box viewin";
-                pd.appendChild(box);
-                var pic = document.createElement("div");
-                pic.className = "pic";
-                box.appendChild(pic);
+                var img_box=document.createElement("div");
+                img_box.className="img_box";
+                var img_area=document.createElement("div");
+                img_area.className="img_area";
+                var img_a=document.createElement("a");
+                var img_img=document.createElement("img");
+                img_img.src="images/"+i+".jpg";
+                var img_shadow=document.createElement("div");
+                img_shadow.className="shadow";
+                var img_infor=document.createElement("p");
+                img_infor.innerHTML="jiesao";
+                img_box.appendChild(img_area);
+                img_area.appendChild(img_a);
+                img_area.appendChild(img_infor);
+                img_a.appendChild(img_img);
+                img_a.appendChild(img_shadow);
 
-                var heart_btn=document.createElement("div");
-                heart_btn.className="heart_btn heart_btn_show";
-                //data-selected 需要后台给出值  这里测试用 设为false  代表用户没有 喜爱
-                //喜爱需要变为红色按钮
-                heart_btn.dataset.selected="false";
-                var heart=document.createElement("i");
-                heart.className="heart";
-                heart_btn.appendChild(heart);
-                pic.appendChild(heart_btn);
-
-                var a = document.createElement("a");
-                //a.href="";
-                pic.appendChild(a);
-
-                var img = document.createElement("img");
-                img.src = "images/" + num + ".jpg";
-                a.appendChild(img);
-
-                var img_shadow = document.createElement("div");
-                img_shadow.className="img_shadow cover";
-                a.appendChild(img_shadow);
-
-                var img_infor_p = document.createElement("p");
-                img_infor_p.className = "img_infor";
-                img_infor_p.innerHTML = "这里是图片介绍这里是图片介绍这里是图片介绍这里是图片介绍这里是图片介绍这里是图片介绍这里是图片介绍"
-                pic.appendChild(img_infor_p);
-
-                var author_infor_div = document.createElement("div");
-                author_infor_div.className = "author_infor";
-                pic.appendChild(author_infor_div);
-
-                var author_head_a = document.createElement("a");
-                author_head_a.className = "author_head";
-                author_infor_div.appendChild(author_head_a);
-
-                var author_name_p = document.createElement("p");
-                author_name_p.className = "author_name";
-                author_name_p.innerHTML = "作者名称";
-                author_infor_div.appendChild(author_name_p)
-
-                var img2 = document.createElement("img");
-                img2.src = "img_test/author_test.jpg";
-                author_head_a.appendChild(img2);
+                pd.appendChild(img_box)
 
                 /*调试用*/
-                num++;
-                if (num == maxNum + 1) { num = 0; }
-
-
-                img.onload = function() {
-                    putInMain(box, main);
+                
+                img_img.onload = function() {
+                    putInMain(img_box, main);
                 }
             })();
         }
@@ -107,6 +72,7 @@ window.addEventListener('load', function() {
         //设置列数,存入全局对象,并将其初始化
         positionMessage.length = num;
         positionMessage.hei = new Array(positionMessage.length);
+        
         positionMessage.wid = wid;
         positionMessage.top = main.offsetTop;
 
@@ -128,6 +94,8 @@ window.addEventListener('load', function() {
         for (var i = 0; i < positionMessage.length; i++) {
             positionMessage.hei[i] = 0;
         }
+        //留给添加采集 组件的空间
+        positionMessage.hei[0]=146;
         //console.log(positionMessage);//测试
 
         //修改main盒子的样式,使其居中
@@ -140,8 +108,8 @@ window.addEventListener('load', function() {
     //将生成的box放在该有的位置(通过positionMessage获得) 并更新positionMessage
     function putInMain(element, parent) {
         var minHei = Math.min.apply(null, positionMessage.hei);
-        //console.log(minHei);
         var index = findIndex(minHei);
+
         element.style.position = "absolute";
         element.style.left = index * positionMessage.wid + 'px';
         element.style.top = minHei + 'px';

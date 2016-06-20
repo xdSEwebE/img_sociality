@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>西电花瓣</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/animation.css">
     <link rel="stylesheet" href="css/pagecss.css">
+    <script defer src="js/jquery.min.js"></script>
     <script defer src="js/waterFall.js"></script>
     <script defer src="js/searchInput.js"></script>
     <script defer src="js/someEffect.js"></script>
+    <script defer src="js/eventDelegation.js"></script>
 </head>
 
 <body>
@@ -46,7 +49,7 @@
             <div class="mask"></div>
             <div id="head_page">
                 <div class="title_box">
-                    <h1 id="head_title">西电花瓣,陪你做生活的设计师</h1>
+                    <h1 id="head_title">分享生活,感悟美好</h1>
                 </div>
                 <div class="search_box">
                     <form method="get" action="#" class="search_unit">
@@ -83,7 +86,8 @@
                 <!--
                 <div class="box">
                     <div class="pic">
-                        <a href=""><img src="images/0.jpg" /></a>
+                        <div class="heart_btn heart_btn_show" data-selected="false"><i class="heart"></i></div>
+                        <a href=""><img src="images/0.jpg" /><div class="img_shadow cover"></div></a>
                         <p class="img_infor">
                             这里是图片介绍这里是图片介绍这里是图片介绍这里是图片介绍这里是图片介绍这里是图片介绍这里是图片介绍
                         </p>
@@ -95,6 +99,99 @@
                 </div>
                 -->
             </div>
+        </div>
+    </div>
+    <div id="img_view">
+        <div id="img_view_close">
+        </div>
+        <div class="img_list">
+            <div class="img_list_box">
+                <ul class="img_list_ul">
+                    <li class="selected">
+                        <div class="img_box">
+                            <img class="imgitem" src="img/head-img/bg1.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img class="imgitem" src="img/head-img/bg2.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img class="imgitem" src="img/head-img/bg3.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img class="imgitem" src="img/head-img/bg4.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img class="imgitem" src="img/head-img/bg5.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img class="imgitem" src="img/head-img/bg4.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img class="imgitem" src="img/head-img/bg5.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img class="imgitem" src="img/head-img/bg4.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img class="imgitem" src="img/head-img/bg5.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img class="imgitem" src="img/head-img/bg4.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img class="imgitem" src="img/head-img/bg5.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img class="imgitem" src="img/head-img/bg4.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img class="imgitem" src="img/head-img/bg5.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img class="imgitem" src="img/head-img/bg4.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img class="imgitem" src="img/head-img/bg5.jpg" alt="">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="img_area">
+            <div class="view_bar">
+                <!-- <div class="heart_btn heart_btn_show" data-selected="false">
+                        <i class="heart"></i>
+                    </div> -->
+            </div>
+            <img id="main_img" src="img/head-img/bg1.jpg">
         </div>
     </div>
     <div id="returnTop" title="回到顶部"></div>

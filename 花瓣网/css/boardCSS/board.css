@@ -1,0 +1,83 @@
+html{
+	background-color:#edece9;
+}
+.main_img_box{
+	margin-top:100px;
+	width:100%;
+}
+#img_page {
+    position: relative;
+    width: 100%;
+}
+
+/* .box {
+    padding: 10px;
+    float: left;
+} */
+
+.add_img{
+	position:absolute;
+	top:0;
+	left:0;
+	padding:0 8px;
+}
+.add_img .inner{
+	height: 126px;
+	width:220px;
+	background: #f6f5f5;
+    box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    cursor: pointer;
+    border: 2px dashed #dedede;
+}
+.add_img .inner:hover{
+	background: #fff;
+}
+.add_img .inner>i{
+	display:block;
+	width: 48px;
+    height: 48px;
+    background: url("../../img/head-img/icon_add_rbig.png") 0 0 no-repeat;
+    margin: 28px auto 10px;
+}
+.add_img .inner>p{
+	text-align:center;
+}
+
+.img_box{
+	position:absolute;
+	width:240px;
+}
+.img_area{
+	width:100%;
+	box-sizing:border-box;
+	padding:0 10px 15px;
+
+}
+.img_area>a{
+	display:block;
+	position:relative;
+	width:100%;
+}
+.img_area>a>img{
+	width:100%;
+	vertical-align:bottom;
+}
+.img_area>a .shadow{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	
+}
+.img_area>a:hover .shadow{
+	background-color: rgba(0,0,0,.1);
+}
+.img_area>p{
+	padding: 10px 16px;
+    line-height: 1.35em;
+    overflow: hidden;
+    word-wrap: break-word;
+    font-size: 12px;
+    background-color: #fff;
+}
