@@ -62,9 +62,19 @@ $(function() {
     });
     //上传 采集按钮事件
     $("#submit_img").on("click",function(){
-        console.log($("#uploadimg")[0].files[0]);
+        //console.log($("#uploadimg")[0].files[0]);
+        var data=new FormData();
+        data.append($("#uploadimg")[0].files[0]);
         $.ajax({
-
+            url:"",
+            type:"POST",
+            data:data,
+            success:function(data){
+                console.log("返回的数据为:"+data);
+            },
+            error:function(e1,e2){
+                console.log(""+e1+e2);
+            }
         })
     });
 });
